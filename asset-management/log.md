@@ -14,3 +14,16 @@
 ## [2026-04-17] update | Domain corrected
 - Clarified that this wiki is for infrastructure asset management, not investing, trading, or fund management
 - Updated: SCHEMA.md
+
+## [2026-04-17] ingest | iam-anatomy-version-4-final
+- Source analyzed: raw/papers/iam-anatomy-version-4-final.pdf
+- Added pages:
+  - entities/institute-of-asset-management.md
+  - concepts/asset-management.md
+  - concepts/line-of-sight.md
+  - concepts/iam-10-box-capabilities-model.md
+  - concepts/asset-management-system.md
+  - concepts/asset-management-decision-making.md
+  - concepts/risk-management.md
+  - concepts/value-realization.md
+- Updated: index.md
