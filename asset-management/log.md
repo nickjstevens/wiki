@@ -10,3 +10,7 @@
 - Path: /home/nick/Documents/wiki/asset-management
 - Structure created with SCHEMA.md, index.md, log.md
 - Directories created: raw/articles, raw/papers, raw/transcripts, raw/assets, entities, concepts, comparisons, queries
+
+## [2026-04-17] update | Domain corrected
+- Clarified that this wiki is for infrastructure asset management, not investing, trading, or fund management
+- Updated: SCHEMA.md
