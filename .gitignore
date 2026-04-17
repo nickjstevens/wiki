@@ -1,3 +1,15 @@
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor swap files
 *.swp
 *.swo
+*~
+
+# Obsidian local vault metadata
+.obsidian/
+.trash/
+
+# Local automation/runtime state
+.omx/
