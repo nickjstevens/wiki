@@ -49,7 +49,7 @@ confidence: low | medium | high
 ```
 
 ## Tag Taxonomy
-- Domain: seismic, earthquake, structural, geotechnical, dynamics, code, detailing
+- Domain: seismic, earthquake, structural, geotechnical, dynamics, nuclear, code, detailing
 - Analysis: linear-analysis, nonlinear-analysis, modal-analysis, time-history, response-spectrum, pushover, modeling
 - Response: period, damping, stiffness, mass, drift, acceleration, force, ductility, overstrength, torsion, irregularity
 - Design: capacity-design, performance-based, retrofit, foundation, steel, concrete, masonry, timber
