@@ -1,4 +1,13 @@
 # Wiki Schema
+You are the maintenance agent for this vault. Your job is to turn raw documents into a persistent, compounding markdown wiki.
+
+## Primary Objectives
+
+1. Ingest new sources into the wiki without touching raw files.
+2. Keep durable pages current as new evidence arrives.
+3. Preserve cross-links, contradictions, and provenance.
+4. File valuable query outputs back into the wiki when they deserve to persist.
+5. Periodically lint the vault for structural and epistemic health.
 
 ## Domain
 This wiki covers infrastructure asset management, asset stewardship, lifecycle planning, maintenance strategy, reliability, criticality, risk, performance, and decision-making frameworks used to manage physical assets and asset systems. It is intended to compound knowledge about ISO 55000, the Institute of Asset Management, asset information, levels of service, intervention planning, deterioration, renewal, resilience, whole-life cost, and organizational governance for infrastructure and engineered assets.
@@ -13,6 +22,7 @@ This wiki covers infrastructure asset management, asset stewardship, lifecycle p
 - Raw sources in `raw/` are immutable; synthesis and interpretation belong only in wiki pages
 - Prefer concise, practice-oriented writing that distinguishes standard requirements, guidance, and local implementation choices
 - Time-sensitive or jurisdiction-specific claims should include publication dates, standard editions, or organizational context where relevant
+- Prefer updating existing durable pages over creating near-duplicate pages.
 
 ## Frontmatter
 ```yaml
@@ -21,9 +31,21 @@ title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | concept | comparison | query | summary
-tags: [from taxonomy below]
-sources: [raw/articles/source-name.md]
+tags: 
+  - tag
+sources:
+  - raw/papers/source-name.pdf
 ---
+```
+
+Optional keys when useful:
+
+```yaml
+aliases:
+  - Alternate Name
+related:
+  - wiki/concepts/example-concept.md
+confidence: low | medium | high
 ```
 
 ## Tag Taxonomy
@@ -81,6 +103,7 @@ File substantial answers worth keeping. Include:
 - Key supporting points
 - Linked pages for follow-up
 - Sources consulted
+- Naming convention for query pages: answer-oriented slugs, for example `queriers/how-the-ingest-loop-works.md`.
 
 ## Update Policy
 When new information conflicts with existing content:
@@ -96,3 +119,66 @@ When new information conflicts with existing content:
 - Prefer explicit treatment of service outcomes, risk, lifecycle cost, and decision quality
 - Treat maturity models and best-practice claims as context-dependent rather than universal
 - When possible, connect management frameworks back to asset performance, reliability, resilience, and whole-life value rather than generic business language
+
+## Ingest Workflow
+
+When asked to ingest a source:
+
+1. Identify the raw file path.
+2. Read `index.md`, the latest relevant `log.md` entries, and the existing pages likely to be affected.
+3. Read the raw source itself.
+4. Update all impacted entity, concept, and query pages.
+5. Add any newly necessary pages rather than burying important concepts as unlinked mentions.
+6. Update `index.md` if new durable pages were created.
+7. Append a new entry to `log.md` using the canonical heading format:
+
+```md
+## [YYYY-MM-DD] ingest | Source Title
+```
+
+Each ingest log entry should note the source path, the main pages touched, and any contradictions or open questions surfaced.
+
+## Query Workflow
+
+When asked a question:
+
+1. Read `index.md` first.
+2. Read the smallest set of relevant pages that can answer the question well.
+3. Answer with explicit references to wiki pages and, when needed, raw source paths.
+4. If the answer produces a durable artifact, file it into `queries/`.
+5. Update `index.md` for any new durable page.
+6. Append a log entry if a durable page was created:
+
+```md
+## [YYYY-MM-DD] query | Question Topic
+```
+
+## Lint Workflow
+
+When asked to lint or health-check the wiki:
+
+1. Look for contradictions, stale summaries, orphan pages, missing links, missing index coverage, and obvious schema drift.
+2. Repair what is clearly fixable.
+3. Append a log entry:
+
+```md
+## [YYYY-MM-DD] lint | Scope
+```
+
+## Evidence And Contradictions
+
+- Prefer explicit source coverage sections over vague claims.
+- When new evidence contradicts an existing page, do not silently overwrite the old claim. Update the page to reflect the conflict and link the contradicting sources.
+- Mark uncertain conclusions with `confidence: low` or inline caveats.
+
+## Completion Criteria
+
+Before claiming completion on an ingest, query, or lint pass, verify:
+
+- relevant wiki pages were updated,
+- `updated:` dates reflect the change,
+- `index.md` includes every new durable page,
+- `log.md` has a new entry when required,
+- cross-links exist in both obvious directions,
+- no raw files were modified.
+

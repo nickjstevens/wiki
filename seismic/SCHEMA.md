@@ -1,4 +1,13 @@
 # Wiki Schema
+You are the maintenance agent for this vault. Your job is to turn raw documents into a persistent, compounding markdown wiki.
+
+## Primary Objectives
+
+1. Ingest new sources into the wiki without touching raw files.
+2. Keep durable pages current as new evidence arrives.
+3. Preserve cross-links, contradictions, and provenance.
+4. File valuable query outputs back into the wiki when they deserve to persist.
+5. Periodically lint the vault for structural and epistemic health.
 
 ## Domain
 This wiki covers seismic analysis and design, structural dynamics, earthquake engineering, design codes, modeling workflows, detailing practice, and related theory. It is intended to compound knowledge about seismic demand, capacity, ductility, response modification, nonlinear behavior, code provisions, and practical engineering judgment across analysis and design tasks.
@@ -13,6 +22,7 @@ This wiki covers seismic analysis and design, structural dynamics, earthquake en
 - Raw sources in `raw/` are immutable; interpretation and synthesis belong only in wiki pages
 - Prefer concise engineering summaries with assumptions, limitations, and code/jurisdiction context stated clearly
 - Time-sensitive or jurisdiction-specific claims should identify the applicable code edition, standard, or publication date
+- Prefer updating existing durable pages over creating near-duplicate pages.
 
 ## Frontmatter
 ```yaml
@@ -21,9 +31,21 @@ title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | concept | comparison | query | summary
-tags: [from taxonomy below]
-sources: [raw/papers/source-name.pdf]
+tags: 
+  - tag
+sources:
+  - raw/papers/source-name.pdf
 ---
+```
+
+Optional keys when useful:
+
+```yaml
+aliases:
+  - Alternate Name
+related:
+  - wiki/concepts/example-concept.md
+confidence: low | medium | high
 ```
 
 ## Tag Taxonomy
@@ -74,12 +96,13 @@ Side-by-side analyses. Include:
 Examples: response spectrum vs time-history analysis, force-based vs displacement-based design, code approaches across standards.
 
 ## Query Pages
-File substantial answers worth keeping. Include:
+File substantial answers worth keeping, plus open questions or contraditions to resolve. Include:
 - The original question
 - A concise answer
 - Key supporting points
 - Linked pages for follow-up
 - Sources consulted
+- Naming convention for query pages: answer-oriented slugs, for example `queriers/how-the-ingest-loop-works.md`.
 
 ## Update Policy
 When new information conflicts with existing content:
@@ -95,3 +118,66 @@ When new information conflicts with existing content:
 - Prefer explicit note of load path, ductility mechanism, and likely failure mode
 - Treat jurisdiction-specific requirements as local unless generalized carefully
 - When possible, connect design rules back to structural dynamics and physical behavior rather than rote clause citation
+
+## Ingest Workflow
+
+When asked to ingest a source:
+
+1. Identify the raw file path.
+2. Read `index.md`, the latest relevant `log.md` entries, and the existing pages likely to be affected.
+3. Read the raw source itself.
+4. Update all impacted entity, concept, and query pages.
+5. Add any newly necessary pages rather than burying important concepts as unlinked mentions.
+6. Update `index.md` if new durable pages were created.
+7. Append a new entry to `log.md` using the canonical heading format:
+
+```md
+## [YYYY-MM-DD] ingest | Source Title
+```
+
+Each ingest log entry should note the source path, the main pages touched, and any contradictions or open questions surfaced.
+
+## Query Workflow
+
+When asked a question:
+
+1. Read `index.md` first.
+2. Read the smallest set of relevant pages that can answer the question well.
+3. Answer with explicit references to wiki pages and, when needed, raw source paths.
+4. If the answer produces a durable artifact, file it into `queries/`.
+5. Update `index.md` for any new durable page.
+6. Append a log entry if a durable page was created:
+
+```md
+## [YYYY-MM-DD] query | Question Topic
+```
+
+## Lint Workflow
+
+When asked to lint or health-check the wiki:
+
+1. Look for contradictions, stale summaries, orphan pages, missing links, missing index coverage, and obvious schema drift.
+2. Repair what is clearly fixable.
+3. Append a log entry:
+
+```md
+## [YYYY-MM-DD] lint | Scope
+```
+
+## Evidence And Contradictions
+
+- Prefer explicit source coverage sections over vague claims.
+- When new evidence contradicts an existing page, do not silently overwrite the old claim. Update the page to reflect the conflict and link the contradicting sources.
+- Mark uncertain conclusions with `confidence: low` or inline caveats.
+
+## Completion Criteria
+
+Before claiming completion on an ingest, query, or lint pass, verify:
+
+- relevant wiki pages were updated,
+- `updated:` dates reflect the change,
+- `index.md` includes every new durable page,
+- `log.md` has a new entry when required,
+- cross-links exist in both obvious directions,
+- no raw files were modified.
+
