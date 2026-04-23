@@ -12,8 +12,7 @@ tags:
   - limitation
 sources:
   - raw/papers/On the use of Rayleigh damping for seismic analysis - Nielson - 2010.pdf
-  - raw/papers/ASCE 4-16_ocr.pdf
-  - raw/papers/Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf
+  - raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf
 ---
 
 # Rayleigh damping in seismic analysis

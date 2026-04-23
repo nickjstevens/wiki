@@ -13,7 +13,7 @@ tags:
 sources:
   - raw/papers/Evaluation of Modal Combination Methods for Seismic Response Spectrum Analysis.pdf
   - raw/papers/Generate Floor Response Spectra - Direct Spectra to Spectra Method.pdf
-  - raw/papers/ASCE 4-16_ocr.pdf
+  - raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf
 ---
 
 # Modal combination methods and floor response spectra

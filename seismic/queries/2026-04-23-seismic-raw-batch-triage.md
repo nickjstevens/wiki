@@ -9,8 +9,7 @@ tags:
   - assumption
   - limitation
 sources:
-  - raw/papers/ASCE 4-16_ocr.pdf
-  - raw/papers/Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf
+  - raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf
 ---
 
 # 2026-04-23 seismic raw batch triage
@@ -21,9 +20,7 @@ What did this first raw-paper sync add, and are there any obvious curation issue
 
 ## Answer
 
-The batch establishes a strong starting spine for the seismic wiki around nuclear standards, SSI and wave-boundary modeling, nonlinear assessment methods, steel seismic design, and selected RC and isolation topics. One curation issue surfaced immediately:
-
-1. `Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf` appears to duplicate the ASCE/SEI 4-16 standard already present as `ASCE 4-16_ocr.pdf`.
+The batch establishes a strong starting spine for the seismic wiki around nuclear standards, SSI and wave-boundary modeling, nonlinear assessment methods, steel seismic design, and selected RC and isolation topics. The duplicate ASCE 4-16 raw file identified during ingest has since been removed, leaving a single retained copy.
 
 ## Key supporting points
 

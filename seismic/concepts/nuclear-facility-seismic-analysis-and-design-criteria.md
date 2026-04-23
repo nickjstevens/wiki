@@ -11,9 +11,8 @@ tags:
   - structural
   - performance-based
 sources:
-  - raw/papers/ASCE 4-16_ocr.pdf
+  - raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf
   - raw/papers/ASCE 43-05_ocr.pdf
-  - raw/papers/Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf
   - raw/papers/Finite Element Models for Computing Seismic Induced Soil Pressures on Deeply Embedded Nuclear Power Plant Structures.pdf
   - raw/papers/Generate Floor Response Spectra - Direct Spectra to Spectra Method.pdf
 ---

@@ -11,8 +11,7 @@ tags:
   - structural
   - dynamics
 sources:
-  - raw/papers/ASCE 4-16_ocr.pdf
-  - raw/papers/Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf
+  - raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf
 ---
 
 # ASCE/SEI 4-16
@@ -27,8 +26,7 @@ ASCE/SEI 4-16 is the ASCE standard focused on seismic analysis of safety-related
 
 ## Evidence from this ingest batch
 
-- `ASCE 4-16_ocr.pdf` is a direct OCR copy of the standard.
-- `Seismic Analysis of Safety-Related Nuclear Structures - 2017.pdf` appears to duplicate the same standard under a descriptive filename, so it should be treated as overlapping source coverage rather than independent evidence.
+- `ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf` is the retained copy of the standard after duplicate cleanup.
 
 ## Practical use in this wiki
 
