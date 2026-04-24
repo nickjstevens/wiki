@@ -1,4 +1,5 @@
 # Wiki Schema
+
 You are the maintenance agent for this vault. Your job is to turn raw documents into a persistent, compounding markdown wiki.
 
 ## Primary Objectives
@@ -10,9 +11,11 @@ You are the maintenance agent for this vault. Your job is to turn raw documents 
 5. Periodically lint the vault for structural and epistemic health.
 
 ## Domain
+
 This wiki covers infrastructure asset management, asset stewardship, lifecycle planning, maintenance strategy, reliability, criticality, risk, performance, and decision-making frameworks used to manage physical assets and asset systems. It is intended to compound knowledge about ISO 55000, the Institute of Asset Management, asset information, levels of service, intervention planning, deterioration, renewal, resilience, whole-life cost, and organizational governance for infrastructure and engineered assets.
 
 ## Conventions
+
 - File names: lowercase, hyphens, no spaces (e.g., `iso-55000.md`, `whole-life-costing.md`)
 - Every wiki page starts with YAML frontmatter
 - Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
@@ -25,6 +28,7 @@ This wiki covers infrastructure asset management, asset stewardship, lifecycle p
 - Prefer updating existing durable pages over creating near-duplicate pages.
 
 ## Frontmatter
+
 ```yaml
 ---
 title: Page Title
@@ -49,6 +53,7 @@ confidence: low | medium | high
 ```
 
 ## Tag Taxonomy
+
 - Standards: iso55000, iso55001, iso55002, iam, bsi, standard, guidance
 - Asset-Types: infrastructure, transport, water, energy, buildings, utilities, plant, equipment
 - Lifecycle: lifecycle, acquisition, operations, maintenance, inspection, renewal, disposal, deterioration
@@ -61,6 +66,7 @@ confidence: low | medium | high
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed, add it here first, then use it.
 
 ## Page Thresholds
+
 - Create a page when an entity or concept appears in 2+ sources OR is central to one source
 - Add to an existing page when a source mentions something already covered
 - Do not create pages for passing mentions, generic management jargon, or off-domain topics
@@ -68,7 +74,9 @@ Rule: every tag on a page must appear in this taxonomy. If a new tag is needed, 
 - Archive a page when its content is fully superseded
 
 ## Entity Pages
+
 One page per notable entity. Include:
+
 - Overview / what it is
 - Key facts and dates
 - Role in infrastructure asset-management practice
@@ -78,7 +86,9 @@ One page per notable entity. Include:
 Examples: standards bodies, regulators, owners/operators, software platforms, notable institutions, key practitioners.
 
 ## Concept Pages
+
 One page per concept or topic. Include:
+
 - Definition / explanation
 - Why it matters in infrastructure asset management
 - Current state of knowledge or common practice
@@ -88,7 +98,9 @@ One page per concept or topic. Include:
 Examples: asset management system, levels of service, criticality assessment, reliability-centered maintenance, asset information requirements, risk-based renewal.
 
 ## Comparison Pages
+
 Side-by-side analyses. Include:
+
 - What is being compared and why
 - Dimensions of comparison (table preferred where useful)
 - Verdict or synthesis
@@ -97,7 +109,9 @@ Side-by-side analyses. Include:
 Examples: preventive vs predictive maintenance, ISO 55001 vs PAS 55, condition-based vs time-based intervention, centralized vs decentralized asset governance.
 
 ## Query Pages
+
 File substantial answers worth keeping. Include:
+
 - The original question
 - A concise answer
 - Key supporting points
@@ -106,13 +120,16 @@ File substantial answers worth keeping. Include:
 - Naming convention for query pages: answer-oriented slugs, for example `queriers/how-the-ingest-loop-works.md`.
 
 ## Update Policy
+
 When new information conflicts with existing content:
+
 1. Check the dates — newer standards, revisions, or better evidence generally supersede older information
 2. If genuinely contradictory, note both positions with dates and sources
 3. Mark the contradiction in frontmatter: `contradictions: [page-name]`
 4. Flag for user review in the next lint report
 
 ## Domain Heuristics
+
 - Distinguish formal standard requirements from implementation guidance and organizational practice
 - Separate asset management policy, strategy, planning, delivery, and assurance layers
 - Note whether claims apply at asset, portfolio, organization, or system level
@@ -181,4 +198,3 @@ Before claiming completion on an ingest, query, or lint pass, verify:
 - `log.md` has a new entry when required,
 - cross-links exist in both obvious directions,
 - no raw files were modified.
-

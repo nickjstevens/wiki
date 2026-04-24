@@ -1,4 +1,5 @@
 # Wiki Schema
+
 You are the maintenance agent for this vault. Your job is to turn raw documents into a persistent, compounding markdown wiki.
 
 ## Primary Objectives
@@ -10,9 +11,11 @@ You are the maintenance agent for this vault. Your job is to turn raw documents 
 5. Periodically lint the vault for structural and epistemic health.
 
 ## Domain
+
 This wiki covers seismic analysis and design, structural dynamics, earthquake engineering, design codes, modeling workflows, detailing practice, and related theory. It is intended to compound knowledge about seismic demand, capacity, ductility, response modification, nonlinear behavior, code provisions, and practical engineering judgment across analysis and design tasks.
 
 ## Conventions
+
 - File names: lowercase, hyphens, no spaces (e.g., `response-spectrum-analysis.md`, `capacity-design.md`)
 - Every wiki page starts with YAML frontmatter
 - Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
@@ -25,6 +28,7 @@ This wiki covers seismic analysis and design, structural dynamics, earthquake en
 - Prefer updating existing durable pages over creating near-duplicate pages.
 
 ## Frontmatter
+
 ```yaml
 ---
 title: Page Title
@@ -49,6 +53,7 @@ confidence: low | medium | high
 ```
 
 ## Tag Taxonomy
+
 - Domain: seismic, earthquake, structural, geotechnical, dynamics, nuclear, code, detailing
 - Analysis: linear-analysis, nonlinear-analysis, modal-analysis, time-history, response-spectrum, pushover, modeling
 - Response: period, damping, stiffness, mass, drift, acceleration, force, ductility, overstrength, torsion, irregularity
@@ -60,6 +65,7 @@ confidence: low | medium | high
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed, add it here first, then use it.
 
 ## Page Thresholds
+
 - Create a page when an entity or concept appears in 2+ sources OR is central to one source
 - Add to an existing page when a source mentions something already covered
 - Do not create pages for passing mentions, routine textbook phrases, or off-domain topics
@@ -67,7 +73,9 @@ Rule: every tag on a page must appear in this taxonomy. If a new tag is needed, 
 - Archive a page when its content is fully superseded
 
 ## Entity Pages
+
 One page per notable entity. Include:
+
 - Overview / what it is
 - Key facts and dates
 - Relevance to seismic analysis or design practice
@@ -77,7 +85,9 @@ One page per notable entity. Include:
 Examples: design standards, software packages, institutions, notable researchers, major codes.
 
 ## Concept Pages
+
 One page per concept or topic. Include:
+
 - Definition / explanation
 - Why it matters in seismic analysis or design
 - Current state of knowledge or practice
@@ -87,7 +97,9 @@ One page per concept or topic. Include:
 Examples: response reduction factor, modal participation, accidental torsion, confinement detailing, drift limits.
 
 ## Comparison Pages
+
 Side-by-side analyses. Include:
+
 - What is being compared and why
 - Dimensions of comparison (table preferred where useful)
 - Verdict or synthesis
@@ -96,7 +108,9 @@ Side-by-side analyses. Include:
 Examples: response spectrum vs time-history analysis, force-based vs displacement-based design, code approaches across standards.
 
 ## Query Pages
+
 File substantial answers worth keeping, plus open questions or contraditions to resolve. Include:
+
 - The original question
 - A concise answer
 - Key supporting points
@@ -105,13 +119,16 @@ File substantial answers worth keeping, plus open questions or contraditions to 
 - Naming convention for query pages: answer-oriented slugs, for example `queriers/how-the-ingest-loop-works.md`.
 
 ## Update Policy
+
 When new information conflicts with existing content:
+
 1. Check the dates — newer standards or publications generally supersede older ones
 2. If genuinely contradictory, note both positions with dates and sources
 3. Mark the contradiction in frontmatter: `contradictions: [page-name]`
 4. Flag for user review in the next lint report
 
 ## Domain Heuristics
+
 - Distinguish code minimums from best-practice engineering judgment
 - Separate elastic analysis assumptions from inelastic design intent
 - State whether claims apply to analysis, detailing, assessment, retrofit, or code compliance
@@ -180,4 +197,3 @@ Before claiming completion on an ingest, query, or lint pass, verify:
 - `log.md` has a new entry when required,
 - cross-links exist in both obvious directions,
 - no raw files were modified.
-

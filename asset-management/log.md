@@ -6,16 +6,19 @@
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
 ## [2026-04-17] create | Wiki initialized
+
 - Domain: Asset management
 - Path: /home/nick/Documents/wiki/asset-management
 - Structure created with SCHEMA.md, index.md, log.md
 - Directories created: raw/articles, raw/papers, raw/transcripts, raw/assets, entities, concepts, comparisons, queries
 
 ## [2026-04-17] update | Domain corrected
+
 - Clarified that this wiki is for infrastructure asset management, not investing, trading, or fund management
 - Updated: SCHEMA.md
 
 ## [2026-04-17] ingest | iam-anatomy-version-4-final
+
 - Source analyzed: raw/papers/iam-anatomy-version-4-final.pdf
 - Added pages:
   - entities/institute-of-asset-management.md
@@ -28,8 +31,8 @@
   - concepts/value-realization.md
 - Updated: index.md
 
-
 ## [2026-04-22] ingest | Batch ingest of new asset-management source files
+
 - Normalized raw source filenames:
   - raw/papers/big-data-analytical-architecture-for-asset-management-2017.pdf
   - raw/papers/physical-asset-management-core-practices-operational-performance-2020.pdf
@@ -77,6 +80,7 @@
 - Source themes integrated: ISO 55000 series, PAS 55, GFMAM landscape and maturity, digital transformation, physical asset management, lifecycle delivery, nuclear asset management, and reliability-centered maintenance
 
 ## [2026-04-24] ingest | Weekly asset-management research ingest
+
 - Research window checked: 2026-04-17 through 2026-04-24 UTC
 - New standards / IAM / formal guidance found in-window: none confirmed
 - Added raw sources:

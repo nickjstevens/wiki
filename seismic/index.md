@@ -13,6 +13,7 @@
 - [[nist-gcr-10-917-5]] — NEHRP/NIST technical brief on nonlinear structural analysis for practicing engineers.
 
 ## Concepts
+
 - [[absorbing-and-transmitting-boundaries]] — Numerical boundary treatments for truncating infinite media without unrealistic wave reflection.
 - [[base-isolation-with-friction-pendulum-systems]] — Friction pendulum isolation behavior, especially under near-fault events.
 - [[bridge-pile-soil-interaction-under-seismic-and-moving-loads]] — Coupled railway-bridge foundation dynamics where train speed and earthquake loading interact nonlinearly.
@@ -31,5 +32,6 @@
 ## Comparisons
 
 ## Queries
+
 - [[2026-04-23-seismic-raw-batch-triage]] — Summary of the first raw-paper ingest plus duplicate/off-domain triage notes.
 - [[2026-04-24-weekly-seismic-research-scan]] — Weekly scan filing the latest relevant sources and noting no direct UK nuclear-specific hit this cycle.

@@ -13,6 +13,7 @@
 - [[office-for-nuclear-regulation]] — UK nuclear regulator defining asset-management expectations for duty-holders in high-consequence settings.
 
 ## Concepts
+
 - [[asset-information]] — Information foundation for understanding assets, uncertainty, condition, and decision consequences across the lifecycle.
 - [[asset-management]] — Organization-wide discipline for realizing value from assets through aligned, whole-of-life, outcomes-focused decision-making.
 - [[asset-management-decision-making]] — Structured, value-based process for choosing among asset options under uncertainty across the full life cycle.
