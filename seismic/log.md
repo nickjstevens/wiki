@@ -21,3 +21,10 @@
 - Retained the better-named canonical copy: `raw/papers/ASCE 4-16 - Seismic Analysis of Safety-Related Nuclear Structures.pdf`
 - Updated wiki source references to the canonical filename across entity, concept, query, and log files
 
+
+## [2026-04-24] ingest | Weekly seismic research scan
+- Sources added: `raw/articles/2026-04-22-kahramanmaras-soil-structure-interaction-resonance-study.md`, `raw/articles/2026-04-23-train-bridge-pile-soil-interaction-and-pile-base-response.md`, `raw/articles/2026-04-22-concrete-microcracks-under-seismic-strain-rates.md`
+- Durable pages created: `concepts/bridge-pile-soil-interaction-under-seismic-and-moving-loads.md`, `concepts/concrete-microcracking-and-rate-effects-under-seismic-loading.md`, `queries/2026-04-24-weekly-seismic-research-scan.md`
+- Durable pages updated: `concepts/soil-structure-interaction.md`, `concepts/reinforced-concrete-vulnerability-and-progressive-collapse.md`, `index.md`
+- Main themes: SSI demand beyond simple resonance heuristics, coupled train–bridge–pile–soil dynamics, and brittle fracture implications hidden beneath concrete rate effects.
+- UK nuclear-specific result: no clearly on-point UK nuclear seismic publication found within the search window; broader methodological relevance noted in the weekly query page.
