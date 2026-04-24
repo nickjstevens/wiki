@@ -75,3 +75,17 @@
   - concepts/risk-management.md
   - index.md
 - Source themes integrated: ISO 55000 series, PAS 55, GFMAM landscape and maturity, digital transformation, physical asset management, lifecycle delivery, nuclear asset management, and reliability-centered maintenance
+
+## [2026-04-24] ingest | Weekly asset-management research ingest
+- Research window checked: 2026-04-17 through 2026-04-24 UTC
+- New standards / IAM / formal guidance found in-window: none confirmed
+- Added raw sources:
+  - raw/papers/quasi-experimental-efficiency-diagnostics-nigerian-municipal-infrastructure-asset-management-2026.pdf
+  - raw/papers/ar-mr-equipment-for-physical-asset-management-applications-2026.pdf
+- Updated pages:
+  - concepts/digital-transformation-in-asset-management.md
+  - concepts/asset-management-decision-making.md
+  - concepts/physical-asset-management.md
+- Notes:
+  - The Nigerian municipal infrastructure paper is an abstract-only publication that introduces a quasi-experimental evaluation framework rather than reporting field results.
+  - The AR/MR paper adds current practice guidance on device selection, ruggedisation, offline work, and workflow integration for physical asset management.
