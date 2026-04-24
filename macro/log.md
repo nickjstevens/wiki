@@ -32,3 +32,23 @@
   - concepts/cycle-trading-patterns.md
 - Updated: index.md
 - Noted disagreement in timeline framing around Bitcoin quantum risk between ARK/Unchained and HRF.
+
+## [2026-04-24] ingest | Weekly macro research batch
+- Research window: 2026-04-17 through 2026-04-24.
+- Raw sources added:
+  - raw/articles/a-look-behind-the-feds-curtains-2026-04.md
+  - raw/articles/39-going-on-40-trillion-2026-04.md
+  - raw/articles/who-pays-the-hormuz-toll-2026-04.md
+  - raw/articles/how-war-and-fiat-currencies-drive-gold-oil-2026-04.md
+  - raw/articles/luke-gromen-strait-of-hormuz-supply-chain-collapse-2026-04.md
+- Created pages:
+  - concepts/central-bank-credibility.md
+  - concepts/hormuz-oil-geopolitics.md
+  - concepts/sovereign-debt-and-fiscal-dominance.md
+- Updated pages:
+  - entities/bitcoin.md
+  - concepts/late-cycle-risk-cascade.md
+  - concepts/stablecoins.md
+  - index.md
+- Main themes: Fed credibility, US debt-service pressure, fiscal dominance risk, Hormuz oil/geopolitical transmission, and possible non-dollar/Bitcoin settlement implications.
+- No prompt-file change was made.

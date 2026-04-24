@@ -1,7 +1,7 @@
 ---
 title: Bitcoin
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-24
 type: entity
 tags: [bitcoin, crypto, macro, cycle, valuation, risk, thesis]
 sources:
@@ -10,6 +10,7 @@ sources:
   - raw/papers/HRF_2025_AnnualReport_Digital_FINALv3.pdf
   - raw/papers/Softwar_A_Novel_Theory_on_Power_Projection.pdf
   - raw/papers/how-risk-cascades-through-markets-march-2026-benjamin-cowen.pdf
+  - raw/articles/who-pays-the-hormuz-toll-2026-04.md
 ---
 
 # Bitcoin
@@ -33,9 +34,13 @@ The sources do not reduce Bitcoin to a single narrative. Instead they suggest pa
 - civil-liberties tool
 - proof-of-work security system
 
+## Geopolitical payment-rail signal
+The April 2026 Hormuz toll article reports a claim that oil traffic out of the Persian Gulf could face a levy payable in bitcoin, yuan, or rial. Treat this as a time-sensitive geopolitical signal rather than a settled structural change: if such payment conventions persisted, Bitcoin would appear not only as a savings asset but also as a politically charged settlement rail in conflict-driven commodity trade. This links Bitcoin to [[hormuz-oil-geopolitics]], [[stablecoins]], and dollar-liquidity questions.
+
 ## Related pages
 - [[stablecoins]]
 - [[bitcoin-quantum-risk]]
 - [[financial-freedom-under-authoritarianism]]
 - [[softwar]]
 - [[late-cycle-risk-cascade]]
+- [[hormuz-oil-geopolitics]]
